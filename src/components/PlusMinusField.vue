@@ -64,10 +64,10 @@ export default {
 </script>
 <style scoped>
 .minusplusnumber {
-  font-family: DS-Digital, sans-serif;
+
   margin: auto;
   text-align: center;
-  font-size: 24vw;
+  font-size: 30vw;
   user-select: none;
 }
 

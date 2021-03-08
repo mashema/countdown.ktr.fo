@@ -1,18 +1,15 @@
 <template>
 
   <div>
-    <PlusMinusField v-if="!running" :min="0" :max="12" :value="durationInMinutes" @input="minutes"></PlusMinusField>
+    <PlusMinusField v-if="!running" :min="2" :max="12" :value="durationInMinutes" @input="minutes"></PlusMinusField>
 
-    <div v-if="running" class="time">
+    <div @click="stop" v-if="running" class="time">
       {{ formattedElapsedTime }}
     </div>
 
     <div class="button">
 
-        <span v-if="running">
-        <button @click="stop">Stop</button>
-      </span>
-      <span v-else>
+      <span v-if="!running">
         <button @click="start">Continue</button>
       </span>
 
