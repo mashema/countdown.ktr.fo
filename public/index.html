@@ -24,5 +24,17 @@
     <div v-cloak></div>
 </div>
 <!-- built files will be auto injected -->
+<button style="position: fixed; bottom: 0; right: 0; color: chartreuse; background-color: #000; border: 0" onclick="openFullscreen();">Fullscreen</button>
+<script>
+    /* Get the element you want displayed in fullscreen */
+
+
+    /* Function to open fullscreen mode */
+    function openFullscreen() {
+        let elem = document.getElementById("app");
+            elem.requestFullscreen();
+
+    }
+</script>
 </body>
 </html>
